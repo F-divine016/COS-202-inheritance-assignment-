@@ -1,0 +1,27 @@
+interface Eatable {
+    void eat();
+}
+
+interface Soundable {
+    void makeSound();
+}
+
+class Dog implements Eatable, Soundable {
+    @Override
+    public void eat() {
+        System.out.println("Eating dog food...");
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Barking...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat(); 
+        dog.makeSound(); 
+    }
+}
