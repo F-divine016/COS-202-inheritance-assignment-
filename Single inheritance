@@ -1,0 +1,19 @@
+class Person {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Student extends Person {
+    void study() {
+        System.out.println("Studying...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.eat(); 
+        student.study(); 
+    }
+}
